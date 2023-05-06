@@ -15,19 +15,19 @@ export const Container = styled.ul`
   flex-wrap: wrap;
   justify-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 100px;
 `;
 
 export const LoadMoreBtn = styled.button`
-  position: fixed;
+  /* position: fixed; */
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
   color: #373737;
   width: 196px;
   height: 50px;
-  left: 50%;
-  margin-left: -98px;
+  /* left: 50%; */
+  /* margin-left: -98px; */
   /* right: 25%; */
   padding: 0;
   background: #ebd8ff;
