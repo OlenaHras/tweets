@@ -31,7 +31,7 @@ const ListOfTwwets = () => {
     <>
       {page === 1 && isLoading && <Spinner />}
       {usersList.length > 0 && (
-        <div>
+        <>
           <Container>
             {usersList.map(user => {
               return <TweetsItem user={user} key={user.id} />;
@@ -40,7 +40,7 @@ const ListOfTwwets = () => {
           <LoadMoreBtn onClick={handleLoadMoreBtn}>
             {isLoading ? 'Loading...' : 'Load More'}
           </LoadMoreBtn>
-        </div>
+        </>
       )}
       {/* {isLoading && <Spinner />} */}
       {error && <h2>{error}</h2>}

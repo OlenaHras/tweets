@@ -1,6 +1,6 @@
-// import { useDispatch, useSelector } from 'react-redux';
-// import { fetchUsers } from '../../redux/operations';
-// import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchUsers } from '../../redux/operations';
+import { useEffect } from 'react';
 import {
   Card,
   BackgroundImg,
@@ -19,14 +19,14 @@ import backgroundImg from '../../assets/images/picture.png';
 // import { getUsers } from '../../redux/selectors';
 
 const TweetsItem = ({ user }) => {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   // const { users, isLoading, error } = useSelector(getUsers);
 
-  // useEffect(() => {
-  //   dispatch(fetchUsers());
-  //   console.log(users);
-  // }, [dispatch]);
-  // console.log(user);
+  const handleButtonClick = () => {
+    if (user.followed) {
+    }
+  };
+
   return (
     <Card>
       <>
@@ -41,12 +41,9 @@ const TweetsItem = ({ user }) => {
         </Ellipse>
       </>
       <Info>
-        <InfoTitle style={{ marginBottom: 16 }}>
-          {' '}
-          {user.tweets} tweets
-        </InfoTitle>
-        <InfoTitle> {user.followers} Followers</InfoTitle>
-        <Button>Follow</Button>
+        <InfoTitle style={{ marginBottom: 16 }}>{user.tweets} tweets</InfoTitle>
+        <InfoTitle> {user.followers.toLocaleString()} Followers</InfoTitle>
+        <Button onClick={handleButtonClick}>Follow</Button>
       </Info>
     </Card>
   );
