@@ -1,9 +1,9 @@
-import ListOfTwwets from '../../components/ListOfTweets/ListOfTweets';
+import ListOfTweets from '../../components/ListOfTweets/ListOfTweets';
 import { Container } from './TweetsPage.styled';
 const TweetPage = () => {
   return (
     <Container>
-      <ListOfTwwets />
+      <ListOfTweets />
     </Container>
   );
 };
