@@ -1,20 +1,21 @@
 import { Link } from 'react-router-dom';
 import ListOfTweets from '../../components/ListOfTweets/ListOfTweets';
+import { MdOutlineArrowBackIosNew } from 'react-icons/md';
 import { Container } from './TweetsPage.styled';
 const TweetPage = () => {
   return (
     <Container>
       <Link
         style={{
-          display: 'block',
-
+          display: 'flex',
+          alignItems: 'center',
           fontWeight: 'bold',
           fontSize: '24px',
           marginTop: '30px',
         }}
         to="/"
       >
-        Back
+        <MdOutlineArrowBackIosNew /> Back
       </Link>
       <ListOfTweets />
     </Container>
