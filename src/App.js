@@ -15,7 +15,7 @@ function App() {
       <Suspense fallback={<Spinner />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/tweets" element={<TweetsPage />} />
+          <Route path="/tweetspage" element={<TweetsPage />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
       </Suspense>
