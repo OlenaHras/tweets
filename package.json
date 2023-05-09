@@ -2,6 +2,7 @@
   "name": "tweets",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://OlenaHras.github.io/tweets/",
   "dependencies": {
     "@emotion/styled": "^11.10.8",
     "@reduxjs/toolkit": "^1.9.5",
