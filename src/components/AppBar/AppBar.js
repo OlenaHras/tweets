@@ -21,7 +21,7 @@ const AppBar = () => {
         Home
       </NavLink>
       <NavLink
-        to="/tweetspage"
+        to="/tweets"
         style={({ isActive }) => {
           return {
             fontWeight: isActive ? 'bold' : '',
