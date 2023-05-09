@@ -1,12 +1,9 @@
 import styled from '@emotion/styled';
 
 export const Card = styled.div`
-  /* display: flex; */
   position: relative;
-  /* align-items: center; */
   width: 380px;
   height: 460px;
-  /* padding: 20px; */
   background: linear-gradient(
     114.99deg,
     #471ca9 -0.99%,
@@ -15,7 +12,6 @@ export const Card = styled.div`
   );
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
   border-radius: 20px;
-  /* background-image: url('../../assets/images/picture.png'); */
 `;
 
 export const Logo = styled.img`
@@ -34,8 +30,6 @@ export const Line = styled.div`
   height: 8px;
   width: 380px;
   left: 0px;
-  /* top: 214px; */
-
   background: #ebd8ff;
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
     inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3;
@@ -49,7 +43,6 @@ export const Ellipse = styled.div`
   margin: 0 auto;
   width: 80px;
   height: 80px;
-  /* padding: 9px; */
   border-radius: 50px;
   background: #ebd8ff;
   box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
@@ -60,7 +53,6 @@ export const Avatar = styled.img`
   width: 62px;
   height: 62px;
   border-radius: 50px;
-  /* border: 1px solid #ae7be3; */
 `;
 
 export const Info = styled.div`
@@ -78,7 +70,6 @@ export const InfoTitle = styled.div`
 `;
 
 export const Button = styled.button`
-  /* position: relative; */
   font-family: inherit;
   font-size: 18px;
   line-height: 22px;

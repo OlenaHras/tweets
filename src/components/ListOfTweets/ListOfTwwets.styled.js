@@ -1,16 +1,6 @@
 import styled from '@emotion/styled';
 
 export const Container = styled.ul`
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, 31%); */
-  /* grid-template-columns: fit-content(60%); */
-  /* justify-content: space-between; */
-  /* justify-items: center;
-  justify-content: center;
-  padding: 0;
-  margin-bottom: 50px;
-  gap: 50px;
-  row-gap: 45px; */
   display: flex;
   flex-wrap: wrap;
   justify-items: center;
@@ -29,8 +19,6 @@ export const LoadMoreBtn = styled.button`
   height: 50px;
   left: 50%;
   margin-left: -98px;
-
-  /* right: 25%; */
   padding: 0;
   background: #ebd8ff;
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
@@ -41,4 +29,9 @@ export const LoadMoreBtn = styled.button`
     background: #766a90;
     color: #ebd8ff;
   }
+`;
+
+export const NoMoreUsersMessage = styled.h3`
+  color: #766a90;
+  text-align: center;
 `;

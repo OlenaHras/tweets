@@ -7,4 +7,3 @@ export const store = configureStore({
     users: usersReducer,
   },
 });
-// export const persistor = persistStore(store);
